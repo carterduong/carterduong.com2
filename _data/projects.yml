@@ -1,0 +1,37 @@
+- Sunset Spot:
+  title: Sunset Spot
+  date: June 2018
+  role: Director
+  skills: Blender, Adobe Premiere
+  description: A music video in collaboration with Eternal Dragonz.
+  images:
+    - /assets/img/sunsetspot1.jpg
+    - /assets/img/sunsetspot2.png
+
+- Fashion Quarterly: 
+  title: Fashion Quarterly
+  date: July 2018
+  role: Art Direction, Design
+  skills: Adobe InDesign
+  description: A magazine about the intersection of style, art, and design at UC San Diego.
+  images:
+    - /assets/img/FQ15.jpg
+
+
+- Fashion Quarterly: 
+  title: Fashion Quarterly
+  date: July 2018
+  role: Art Direction, Design
+  skills: Adobe InDesign
+  description: A magazine about the intersection of style, art, and design at UC San Diego.
+  images:
+    - /assets/img/rectangle.svg
+
+- Extras: 
+  title: Extras
+  date: '~'
+  role:
+  skills: 
+  description:
+  images:
+    - /assets/img/rectangle.svg

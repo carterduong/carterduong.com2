@@ -1,0 +1,45 @@
+<div class="projects">
+    <!-- First panel -->
+    <span class="project">
+        {% include canvas.html %}
+        <div class="text">
+            Info<br>
+            Hey I’m Carter, a Chinese-Vietnamese American designer, developer, and artist based in Los Angeles. I recently graduated from UC San Diego with a B.A. in Interdisciplanary Computing and the Arts.
+        </div>
+    </span>
+
+
+
+    {% for project in site.data.projects %}
+        <span class="project">
+            <span class="images">
+                {% for image in project.images %}
+                    <img src="{{image}}">
+                {% endfor %}
+            </span>
+        
+            <div class="text">
+                {{project.title}}<br>
+                {{project.date}}
+                {{project.role}}
+                {{project.skills}}
+                <p>{{project.description}}</p>
+            </div>
+        </span>
+    {% endfor %}
+</div>
+
+{% comment %}
+<div class="row descriptions">
+    {% for project in site.data.projects %}
+        <div class="description">
+            {{project.title}}<br>
+            <hr>
+            {{project.date}}
+            {{project.role}}
+            {{project.skills}}
+            <p>{{project.description}}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endcomment %}
