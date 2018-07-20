@@ -1,8 +1,8 @@
 html {
     color: white;
     background-color: black;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -59,10 +59,7 @@ canvas {
 .projects {
     display: flex;
     justify-content: flex-start;
-    overflow-x: scroll;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-
 
     .project {
         display: flex;
