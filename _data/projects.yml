@@ -16,6 +16,7 @@
   description: A magazine about the intersection of style, art, and design at UC San Diego.
   images:
     - /assets/img/FQ15.jpg
+    - /assets/img/rectangle.svg
 
 
 - Fashion Quarterly: 
@@ -26,6 +27,7 @@
   description: A magazine about the intersection of style, art, and design at UC San Diego.
   images:
     - /assets/img/rectangle.svg
+    - /assets/img/rectangle.svg
 
 - Extras: 
   title: Extras
@@ -34,4 +36,5 @@
   skills: 
   description:
   images:
+    - /assets/img/rectangle.svg
     - /assets/img/rectangle.svg

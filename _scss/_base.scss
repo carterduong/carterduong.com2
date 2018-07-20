@@ -14,7 +14,7 @@ p {
 }
 
 canvas {
-    width: 92vw;
+    width: 150vw;
     height: 70vh;
     margin: 15px 3vw 15px 3vw;
     border: solid;
@@ -59,6 +59,8 @@ canvas {
 .projects {
     display: flex;
     justify-content: flex-start;
+    overflow-x: scroll;
+    white-space: nowrap;
 
     .project {
         display: flex;
@@ -67,10 +69,18 @@ canvas {
     .images {
         display: flex;
     }
-    .text {
+    .info {
+        width: 92vw;
         flex-direction: column;
         justify-content: flex-end;
-        margin: 15px 10px 15px 10px;
+        margin: 15px 3vw 15px 3vw;
+        white-space: normal;
+
+        position: -webkit-sticky;
+        position: sticky;
+        left: 3vw;
+    }
+    .sticky {
     }
 }
 
