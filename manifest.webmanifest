@@ -1,3 +1,4 @@
 {
-    "display": "minimal-ui"
+    "display": "standalone",
+    "orientation": "landscape"
 }
