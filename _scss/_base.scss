@@ -61,6 +61,8 @@ canvas {
     justify-content: flex-start;
     overflow-x: scroll;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+
 
     .project {
         display: flex;
