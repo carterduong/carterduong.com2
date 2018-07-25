@@ -1,15 +1,18 @@
 img {
-    height: 70vh;
-    width: auto;
-    margin: 15px 3vw 15px 3vw;
-    
-    .width-1 {
-        height: auto;
-        width: 94vw;
-        margin: 15px 3vw 15px 3vw;
-    }
+    height: 100%;
     /*
     -webkit-filter: blur(7px);
     filter: blur(7px);
     */
+
+    &:first-child {
+        margin: 0 3vw 0 0;
+    }
+    &:not(:first-child):not(:last-child) {
+        margin: 0 3vw 0 3vw;
+    }
+    &:last-child {
+        margin: 0 0 0 3vw;
+    }
+    
 }

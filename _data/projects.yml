@@ -1,9 +1,9 @@
 - Sunset Spot:
   title: Sunset Spot
   date: June 2018
-  role: Director
-  skills: Blender, Adobe Premiere
-  description: A music video in collaboration with Eternal Dragonz.
+  role: Direction, Type Design
+  skills:
+  description: A music video in collaboration with Pan-Asian music collective Eternal Dragonz.
   images:
     - /assets/img/sunsetspot1.jpg
     - /assets/img/sunsetspot2.png
@@ -36,5 +36,5 @@
   skills: 
   description:
   images:
-    - /assets/img/rectangle.svg
-    - /assets/img/rectangle.svg
+    - /assets/img/vis1.png
+    - /assets/img/rents.tif

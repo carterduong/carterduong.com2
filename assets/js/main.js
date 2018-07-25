@@ -24,6 +24,12 @@ window.onresize = function(){
 window.onresize(); // called to initially set the height.
 
 window.onload = function () {
-    document.body.style.height = window.innerHeight - 44 + 'px';
-    console.log(document.body.style.height);
+
+    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    
+    if (isSafari && iOS) {
+        document.body.style.height = window.innerHeight - 44 + 'px';
+    } else if(isSafari) {
+    }
 };
