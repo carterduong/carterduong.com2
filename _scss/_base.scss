@@ -3,10 +3,11 @@ html {
     background-color: black;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
 }
 
 body {
-    height: 100vh;
+    height: 100vh - 44px;
 }
 
 p {
@@ -60,7 +61,7 @@ canvas {
     display: flex;
     justify-content: flex-start;
     white-space: nowrap;
-    
+
     .project {
         display: flex;
         flex-direction: column;
