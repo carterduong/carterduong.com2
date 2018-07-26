@@ -1,43 +1,35 @@
 <div class="projects">
-    <!-- First panel -->
-    <span class="project">
-        {% include canvas.html %}
-        <div class="info">
-            Info<br>
-            Hey I’m Carter, a Chinese-Vietnamese American designer, developer, and artist based in Los Angeles. I recently graduated from UC San Diego with a B.A. in Interdisciplanary Computing and the Arts.
-        </div>
-    </span>
 
+    <!-- intro panel -->
+    <div class="project" id="first_project">
+        <div class="text">
+            <div class="title">
+                ⟡ Carter Duong
+                <span class="coords">37°55'31.0"N 121°45'47.9"W</span>
+            </div>
+            <p class="description">
+            is a designer, developer and artist from the Bay Area and based in Los Angeles. He recently graduated from UC San Diego with a B.A. in Interdisciplinary Computing and the Arts.
+            </p>
+        </div>
+        {% include canvas.html %}
+    </div>
+
+    <!-- projects -->
     {% for project in site.data.projects %}
-        <span class="project">
-            <span class="images">
+        <div class="project">
+            <div class="images">
                 {% for image in project.images %}
                     <img src="{{image}}">
                 {% endfor %}
-            </span>
+            </div>
         
-            <div class="info">
-                <h3>{{project.title}}<br></h3>
-                {{project.date}} → 
+            <div class="text">
+                <div class="title">→ {{project.title}}</div>
+                {{project.date}}
                 {{project.role}}
                 {{project.skills}}
-                <p>{{project.description}}</p>
+                <p class="description">{{project.description}}</p>
             </div>
-        </span>
-    {% endfor %}
-</div>
-
-{% comment %}
-<div class="row descriptions">
-    {% for project in site.data.projects %}
-        <div class="description">
-            {{project.title}}<br>
-            <hr>
-            {{project.date}}}
-            {{project.role}}
-            {{project.skills}}
-            <p>{{project.description}}</p>
         </div>
     {% endfor %}
 </div>
-{% endcomment %}

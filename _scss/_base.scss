@@ -15,9 +15,9 @@ p {
 }
 
 canvas {
-    width: 93vw;
-    height: 70%;
-    margin: 15px 3vw 15px 3vw;
+    width: auto;
+    height: 100%;
+    margin: 2vh 2vw 2vh 2vw;
     border: solid;
     border-width: 1px;
 }
@@ -50,50 +50,49 @@ canvas {
     }
 } 
 
-.descriptions {
-    h r {
-        position: relative;
-        margin: 40px 15px 0px 15px;
-    }
-}
-
-.fill {
-    height: 50px;
-}
-
 .projects {
     display: flex;
-    justify-content: flex-start;
-    white-space: nowrap;
-    height: 100%;
-    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    width: 100vw;
 
     .project {
-        height: 100%;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .images {
-        display: flex;
-        height: 75%;
-        width: auto;
-        margin: 15px 3vw 15px 3vw;
-
-    }
-    .info {
         height: auto;
-        width: 92vw;
+        width: 100vw;
+        display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        margin: 15px 3vw 15px 3vw;
-        white-space: normal;
+        margin: 2vh 2vw 2vh 2vw;
 
-        position: -webkit-sticky;
-        position: sticky;
-        left: 3vw;
-    }
-    .sticky {
+
+        &:first-child {
+            height: 100vh;
+            width: 100vw;
+            margin-top: 0;
+        }
+        
+        .images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 80%;
+                height: auto;
+            }
+        }
+        .text {
+            margin: 2vh 2vw 2vh 2vw;
+        
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin-bottom: 0.5em;
+            }
+        }
     }
 }
 
