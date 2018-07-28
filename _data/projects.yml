@@ -6,7 +6,7 @@
   description: A music video in collaboration with Pan-Asian music collective Eternal Dragonz.
   images:
     - /assets/img/sunsetspot1.jpg
-    - /assets/img/sunsetspot2.png
+    - /assets/img/sunsetspot3.jpg
 
 - Fashion Quarterly: 
   title: Fashion Quarterly
@@ -31,7 +31,7 @@
 
 - Extras: 
   title: Extras
-  date: '~'
+  date:
   role:
   skills: 
   description:

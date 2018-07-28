@@ -19,12 +19,38 @@ function main() {
 
 window.onload = function () {
 
-    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    
-    if (isSafari && iOS) {
-        //document.getElementById('first_project').style.height = window.innerHeight - 44 + 'px';
-    } else if(isSafari) {
+  var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  
+  if (isSafari && iOS) {
+    document.getElementById('first_project').style.height = window.innerHeight - 44 + 'px';
+  } else if(isSafari) {
+  }
 
-    }
+
+  // add indent
+  var s = "⟡&nbsp;";
+  var len = s.visualLength();
+  var d = document.getElementsByClassName("description");
+  d[0].style.textIndent = len + 'px';
+
+  var s = "→&nbsp;";
+  var len = s.visualLength();
+  var d = document.getElementsByClassName("description");
+  for (var i = 1; i < d.length; i++) {
+    d[i].style.textIndent = len + 'px';
+  }
+
 };
+
+function $(id)
+{
+  return document.getElementById(id);
+}
+
+String.prototype.visualLength = function()
+{
+  var ruler = $("ruler");
+  ruler.innerHTML = this;
+  return ruler.offsetWidth;
+}

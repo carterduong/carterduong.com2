@@ -21,12 +21,10 @@ html {
     // -ms-text-size-adjust: auto
     // -o-text-size-adjust: auto
     // text-size-adjust: auto
-
     letter-spacing: -1px;
 
 }
 /* Copy & Lists */
-
 p {
     line-height: $leading;
     margin-top: $leading;
@@ -115,10 +113,20 @@ code {
     margin-top: 0;
 }
 
+/* new */
+
 .description {
-    text-indent: 1.9em;
+    text-indent: 0em;
 }
 
-.coords {
-    font-size: $scale / 3 * 1rem;
+.meta-text {
+    font-size: $scale / 3.75 * 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+
+}
+
+a {
+    color: white;
 }

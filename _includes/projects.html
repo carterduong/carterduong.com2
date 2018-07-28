@@ -1,37 +1,53 @@
-<div class="projects">
+<span class="name" id="ruler"></span>
 
+<div class="projects">
     <!-- intro panel -->
     <div class="project" id="first_project">
         <div class="text">
-            <div class="title">
+            <div class="project-heading">
                 <span class="name">
                     <span class="pulsate">⟡</span> Carter Duong
                 </span>
-                <span class="coords">37°55'31.0"N 121°45'47.9"W</span>
+                <span class="meta-text">
+                    <a href="https://goo.gl/maps/GCS4cBcNyWt">37°55'31.0"N 121°45'47.9"W</a>
+                </span>
             </div>
-            <p class="description">
-            is a designer, developer and artist from the Bay Area and (soon to be) based in Los Angeles. He recently graduated from UC San Diego with a B.A. in Interdisciplinary Computing and the Arts.
-            </p>
+            <div class="description">
+                    <p class="description-text">
+                        is a designer, developer and artist from the Bay Area and based in Los Angeles. He recently graduated from UC San Diego with a B.A. in Interdisciplinary Computing and the Arts.
+                    </p>
+            </div>
         </div>
+
         {% include canvas.html %}
     </div>
 
     <!-- projects -->
     {% for project in site.data.projects %}
         <div class="project">
-            <div class="images">
-                {% for image in project.images %}
-                    <img src="{{image}}">
-                {% endfor %}
-            </div>
-        
             <div class="text">
-                <div class="title">→ {{project.title}}</div>
-                {{project.date}}
-                {{project.role}}
-                {{project.skills}}
-                <p class="description">{{project.description}}</p>
+                
+                <div class="project-heading">
+                    <span class="name">
+                        <span class="pulsate">→</span> {{project.title}}
+                    </span>
+                </div>
+
+                <div class="description">
+                    <div class="meta-text">
+                        {{project.role}}・{{project.date}}
+                    </div>
+                    <p class="description-text">
+                        {{project.description}}
+                    </p>
+                </div>
             </div>
+
+            <div class="images">
+                    {% for image in project.images %}
+                        <img src="{{image}}">
+                    {% endfor %}
+                </div>
         </div>
     {% endfor %}
 </div>
