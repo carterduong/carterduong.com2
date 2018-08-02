@@ -24,7 +24,8 @@ window.onload = function () {
   
   if (isSafari && iOS) {
     document.getElementById('first_project').style.height = window.innerHeight - 44 + 'px';
-  } else if(isSafari) {
+  } 
+  else if(isSafari) {
   }
 
 

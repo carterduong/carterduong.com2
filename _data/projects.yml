@@ -3,7 +3,7 @@
   date: June 2018
   role: Direction, Type Design
   skills:
-  description: A music video in collaboration with Pan-Asian music collective Eternal Dragonz.
+  description: is a music video in collaboration with Pan-Asian music collective Eternal Dragonz.
   images:
     - /assets/img/sunsetspot1.jpg
     - /assets/img/sunsetspot3.jpg
@@ -13,28 +13,50 @@
   date: July 2018
   role: Art Direction, Design
   skills: Adobe InDesign
-  description: A magazine about the intersection of style, art, and design at UC San Diego.
+  description: is a student-run publication that celebrates the intersection of style, art, and design at UC San Diego.
   images:
     - /assets/img/FQ15.jpg
     - /assets/img/rectangle.svg
 
 
-- Fashion Quarterly: 
-  title: Fashion Quarterly
-  date: July 2018
-  role: Art Direction, Design
-  skills: Adobe InDesign
-  description: A magazine about the intersection of style, art, and design at UC San Diego.
+- tu.na: 
+  title: tu.na
+  date: August 2018
+  role: Web Design, Development
+  skills:
+  description: is a utility developed to migrate Tumblr 'likes' to the are.na platform.
   images:
     - /assets/img/rectangle.svg
     - /assets/img/rectangle.svg
 
+- Heavy Friends: 
+  title: Heavy Friends
+  date: April 2018
+  role: Web Design, Development
+  skills:
+  description: (with DJ ABG and DJ SAT -2400) was a weekly radio show based out of KSDT at UC San Diego.
+  images:
+    - /assets/img/rectangle.svg
+    - /assets/img/rectangle.svg
+
+
+- Résumé: 
+  title: Résumé
+  date: November 2016
+  role: Game Design, Development  
+  description: is a short game about defacing personal property.
+  images:
+    - /assets/img/rectangle.svg
+    - /assets/img/rectangle.svg
+
+
 - Extras: 
   title: Extras
-  date:
+  date: 2016–2018
   role:
   skills: 
   description:
   images:
-    - /assets/img/vis1.png
-    - /assets/img/rents.tif
+    - /assets/img/160.png
+    - /assets/img/vis1@0,75x.png
+    - /assets/img/rents@1x.png 

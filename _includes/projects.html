@@ -1,6 +1,7 @@
+<!-- used to calc indent -->
 <span class="name" id="ruler"></span>
 
-<div class="projects">
+<div class="projects-container">
     <!-- intro panel -->
     <div class="project" id="first_project">
         <div class="text">
@@ -9,12 +10,15 @@
                     <span class="pulsate">⟡</span> Carter Duong
                 </span>
                 <span class="meta-text">
-                    <a href="https://goo.gl/maps/GCS4cBcNyWt">37°55'31.0"N 121°45'47.9"W</a>
+                    <a href="">EMAIL</a>
+                    <a href="">CV</a>
+                    <a href="https://linkedin.com/in/carter-duong-30b35bb7">LINKEDIN</a>
+                    <a href="https://are.na/c-duong">ARE.NA</a>
                 </span>
             </div>
             <div class="description">
                     <p class="description-text">
-                        is a designer, developer and artist from the Bay Area and based in Los Angeles. He recently graduated from UC San Diego with a B.A. in Interdisciplinary Computing and the Arts.
+                        is a designer and developer from the Bay Area and based in Los Angeles. He recently graduated from UC San Diego with a B.A. in Interdisciplinary Computing and the Arts.
                     </p>
             </div>
         </div>
@@ -35,7 +39,7 @@
 
                 <div class="description">
                     <div class="meta-text">
-                        {{project.role}}・{{project.date}}
+                        {{project.role}} ・ {{project.date}}
                     </div>
                     <p class="description-text">
                         {{project.description}}
@@ -50,4 +54,8 @@
                 </div>
         </div>
     {% endfor %}
+
+    <div class="footer">
+        <div class="meta-text">↑</div>
+    </div>
 </div>
