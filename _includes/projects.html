@@ -2,9 +2,8 @@
 <span class="name" id="ruler"></span>
 
 <div class="projects-container">
-    <!-- intro panel -->
     <div class="project" id="first_project">
-        <div class="text">
+        <div class="text-container">
             <div class="project-heading">
                 <span class="name">
                     <span class="pulsate">⟡</span> Carter Duong
@@ -18,7 +17,7 @@
             </div>
             <div class="description">
                     <p class="description-text">
-                        is a designer and developer from the Bay Area and based in Los Angeles. He recently graduated from UC San Diego with a B.A. in Interdisciplinary Computing and the Arts.
+                        is a designer, developer, and artist from the <a class="location" href="https://goo.gl/maps/MmmR1kDyU3m" target="_blank">Bay Area</a> and based in Los Angeles. He recently graduated from <a href="https://goo.gl/maps/zUGJeExzSo22" target="_blank">UC San Diego</a> with a B.A. in Interdisciplinary Computing and the Arts.
                     </p>
             </div>
         </div>
@@ -29,7 +28,7 @@
     <!-- projects -->
     {% for project in site.data.projects %}
         <div class="project">
-            <div class="text">
+            <div class="text-container">
                 
                 <div class="project-heading">
                     <span class="name">
@@ -51,6 +50,9 @@
                     {% for image in project.images %}
                         <img src="{{image}}">
                     {% endfor %}
+                    {% for gif in project.gifs %}
+                        <video src="{{gif}}" autoplay loop></video>
+                     {% endfor %}
                 </div>
         </div>
     {% endfor %}
