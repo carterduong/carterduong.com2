@@ -36,6 +36,7 @@
   skills:
   description: (with DJ ABG and DJ SAT -2400) was a weekly radio show based out of KSDT at UC San Diego.
   images:
+    - assets/img/hffm-tear-small.png
     - assets/img/iPhone_1.png
 
 
@@ -43,7 +44,7 @@
   title: Résumé
   date: November 2016
   role: Game Design, Development  
-  description: is a short game about defacing personal property.
+  description: is an angsty game about defacing personal property.
   gifs:
     - assets/img/resume-1.mp4
     - assets/img/resume-2.mp4

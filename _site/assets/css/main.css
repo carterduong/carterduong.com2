@@ -141,6 +141,18 @@ canvas {
   position: absolute;
   visibility: hidden; }
 
+.fadein {
+  -webkit-animation: fadein 3s;
+  opacity: 1.0;
+  -webkit-opacity: 1.0; }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0.0;
+    -webkit-opacity: 0.0; }
+  100% {
+    opacity: 1.0;
+    -webkit-opacity: 1.0; } }
 .pulsate {
   -webkit-animation: pulsate 3s ease-out;
   -webkit-animation-iteration-count: infinite;
@@ -186,7 +198,7 @@ canvas {
       justify-content: space-evenly;
       align-items: center; }
       .projects-container .project .images img {
-        max-width: 70%;
+        max-width: 65%;
         height: auto; }
         .projects-container .project .images img:not(:last-child) {
           margin-bottom: 2vh; }
@@ -209,6 +221,8 @@ canvas {
         margin-bottom: 0.6em; }
       .projects-container .project .text-container .description-text {
         text-indent: inherit; }
+  .projects-container .footer {
+    margin-bottom: 2vh; }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document

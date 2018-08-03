@@ -31,6 +31,23 @@ canvas {
     visibility: hidden;
 }
 
+.fadein {
+    -webkit-animation: fadein 3s;
+    opacity: 1.0;
+    -webkit-opacity: 1.0;
+}
+
+@-webkit-keyframes fadein {
+    0% { 
+        opacity: 0.0;
+        -webkit-opacity: 0.0;
+    }
+    100% { 
+        opacity: 1.0;
+        -webkit-opacity: 1.0;
+    }
+}
+
 .pulsate {
     -webkit-animation: pulsate 3s ease-out;
     -webkit-animation-iteration-count: infinite; 
@@ -82,7 +99,7 @@ canvas {
             align-items: center;
             
             img {
-                max-width: 70%;
+                max-width: 65%;
                 height: auto;
             
                 &:not(:last-child) {
@@ -123,6 +140,10 @@ canvas {
                 text-indent: inherit; 
             }
         }
+    }
+    
+    .footer {
+        margin-bottom: 2vh;
     }
 }
 

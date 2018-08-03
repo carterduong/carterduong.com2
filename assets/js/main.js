@@ -28,7 +28,6 @@ window.onload = function () {
   else if(isSafari) {
   }
 
-
   // add indent
   var s = "⟡&nbsp;";
   var len = s.visualLength();
