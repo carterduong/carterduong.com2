@@ -18,14 +18,6 @@ html {
     overflow-scrolling: touch;
 }
 
-canvas {
-    width: auto;
-    height: 100%;
-    margin: 2vh 2vw 0 2vw;
-    border: solid;
-    border-width: 1px;
-}
-
 #ruler {
     position: absolute;
     visibility: hidden;
@@ -39,6 +31,10 @@ canvas {
 
 @-webkit-keyframes fadein {
     0% { 
+        opacity: 0.0;
+        -webkit-opacity: 0.0;
+    }
+    7% {
         opacity: 0.0;
         -webkit-opacity: 0.0;
     }
@@ -145,5 +141,14 @@ canvas {
     .footer {
         margin-bottom: 2vh;
     }
+}
+
+#canvas-container {
+    height: 100%;
+    margin: 2vh 2vw 0 2vw;
+}
+
+canvas {
+    margin: 0;
 }
 
