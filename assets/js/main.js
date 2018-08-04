@@ -19,15 +19,6 @@ function main() {
 
 window.onload = function () {
 
-  var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-  
-  if (isSafari && iOS) {
-    document.getElementById('first_project').style.height = window.innerHeight - 44 + 'px';
-  } 
-  else if(isSafari) {
-  }
-
   // add indent
   var s = "⟡&nbsp;";
   var len = s.visualLength();
@@ -41,16 +32,26 @@ window.onload = function () {
     d[i].style.textIndent = len + 'px';
   }
 
+  // safari mobile utils
+  var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  
+  if (isSafari && iOS) {
+    document.getElementById('first_project').style.height = window.innerHeight - 44 + 'px';
+  } 
+  else if(isSafari) {
+  }
 };
 
-function $(id)
-{
-  return document.getElementById(id);
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+// text width calcuation function
 String.prototype.visualLength = function()
 {
-  var ruler = $("ruler");
+  var ruler = document.getElementById('ruler');
   ruler.innerHTML = this;
   return ruler.offsetWidth;
 }

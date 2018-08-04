@@ -2,7 +2,6 @@
   title: Sunset Spot
   date: June 2018
   role: Direction, Type Design
-  skills:
   description: is a music video in collaboration with Pan-Asian music collective Eternal Dragonz.
   images:
     - assets/img/sunsetspot1.jpg
@@ -12,7 +11,6 @@
   title: Fashion Quarterly
   date: July 2018
   role: Art Direction, Design
-  skills: Adobe InDesign
   description: is a student-run publication that celebrates the intersection of style, art, and design at UC San Diego.
   images:
     - assets/img/FQ15.jpg
@@ -23,7 +21,6 @@
   title: tu.na
   date: August 2018
   role: Web Design, Development
-  skills:
   description: is a utility developed to migrate Tumblr 'likes' to the are.na platform.
   images:
     - assets/img/rectangle.svg
@@ -33,7 +30,6 @@
   title: Heavy Friends
   date: April 2018
   role: Web Design, Development
-  skills:
   description: (with DJ ABG and DJ SAT -2400) was a weekly radio show based out of KSDT at UC San Diego.
   images:
     - assets/img/hffm-tear-small.png
@@ -44,7 +40,7 @@
   title: Résumé
   date: November 2016
   role: Game Design, Development  
-  description: is an angsty game about defacing personal property.
+  description: is a game about defacing personal property.
   gifs:
     - assets/img/resume-1.mp4
     - assets/img/resume-2.mp4
@@ -54,7 +50,6 @@
   title: Extras
   date: 2016–2018
   role:
-  skills: 
   description:
   images:
     - assets/img/160.png
